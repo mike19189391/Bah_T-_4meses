@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Bah | Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shortcut icon" href="https://icones.pro/wp-content/uploads/2021/02/icone-de-coeur-noir.png" type="image/x-icon">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+div#area {
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">FECHAR</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">FOTOS</a> 
+  <a href="#botao" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">BOTÃO MÁGICO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SOBRE NÓS</a>
+  <a href="#plano" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PLANO</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTATO</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Nossos 4 Meses | Ester e Bah</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="ba-1.jpeg" style="width:100%" onclick="onClick(this)" alt="Essa foto me deixa confortável, me sinto amada. essa foto foi natural assim como o meu amor por você … ">
+      <img src="ba-2.jpeg" style="width:100%" onclick="onClick(this)" alt="uma das coisas que eu amo ver em você , sempre foi o seu sorriso e como ele se encaixa perfeitamente no seu rosto …me sinto a pessoa mais sortuda dessa vida !">
+      <img src="ba-3.jpeg" style="width:100%" onclick="onClick(this)" alt="kkk vc tava chateada pq as pessoas tinham sido grossas cntg nesse dia, realmente vc é um neném e não merece ser tratada mal ">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="ba-4.jpeg" style="width:100%" onclick="onClick(this)" alt="um frio de 4 graus , um quarto que não esquentava porra nenhuma kkk , minha única salvação era vc …me abraçando e me deixando o mais possível confortável pra dormir ..">
+      <img src="ba-5.jpeg" style="width:100%" onclick="onClick(this)" alt="kkk o queixinho 😍 , é tão difícil acordar 5h da amanhã e te deixar sozinha … eu queria n poder ter que sair do seu lado pra nadinha !">
+      <img src="ba-6.jpeg" style="width:100%" onclick="onClick(this)" alt="meo que mulher GOSTOSAAAAAAAAAAAA  a vontade era de morder e soltar somente quando trovejar 😅">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="ba-7.jpeg" style="width:100%" onclick="onClick(this)" alt="nossa primeira compra da cozinha, eu já  tinha a certeza que vc estaria do meu lado pra tudo nessa vida… a minha felicidade nem se mede nesse dia !">
+      <img src="ba-8.jpeg" style="width:100%" onclick="onClick(this)" alt="vc e a lyra são tudo pra mimmm ,  tenho vcs eu tenho tudo!!!!">
+      <img src="ba-9.jpeg" style="width:100%" onclick="onClick(this)" alt="tá bom eu confesso que amo essa foto! , meo QUE MULHER😍">
+    </div>
+
+    <div class="w3-quarter">
+        <img src="ba-10.jpeg" style="width:100%" onclick="onClick(this)" alt="você me orgulha tanto amor …. Eu tenho o prazer ,a maior alegria de dizer que sou casada com você ! , minha doutora🥺">
+        <img src="ba-11.jpeg" style="width:100%" onclick="onClick(this)" alt="momento preguiça 🥺, eu não consigo controlar a vontade de pular em cima e encher de bjooo akakak😍😍">
+        <img src="ba-12.jpeg" style="width:100%" onclick="onClick(this)" alt="é tão particular o meu encontro quando é com você , o meu sorriso quando tem o seu pra acompanhar … as minhas histórias quando vc para pra escutar , e quando tem alguém pra se chamar … de vida …🥺">
+      </div>
+  </div>
+<br>
+  
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Sobre você</b></h4>
+    <img src="ba-13.jpeg" alt="no caminho do bar/ balada que vc tanto gosta kk e que me dá sono no meio da noite 🤣" class="w3-image w3-padding-32">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Meu eterno amor</h4>
+      <p>Meu amor, nossa história é a história de amor mais linda que eu já conheci. Eu sempre sonhei com um amor que eu pudesse ter orgulho de contar aos outros, uma história que no futuro eu pudesse contar com carinho aos meus filhos e netos e tenho que te dizer que a cada dia acredito mais firmemente que nosso amor é essa história. De todas as que já li, de todas as que já me contaram é a minha favorita. Nem nos mais lindos contos de fadas uma princesa foi tão perfeita, tão linda, tão encantadora e tão mulher como você.
+
+        A cada dia que passa eu te admiro mais e mais. A cada dia que passa eu sinto no meu coração a honra de ter ao meu lado, a grandeza que isso representa, o quanto sou agraciada ,privilegiada, sortuda. A mulher mais incrível que Deus já desenhou é a minha namorada e eu quero estar ao teu lado todos os dias dessa vida. Quero te fazer muito mais que isso, quero que seja minha noiva, minha mulher, minha amante, minha eterna companheira.
+        Te amo tanto meu amor…..  
+      </p>inst: eustter_</p>
+      <p>tel: 11 95746-5412</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Seus atributos</h4>
+      <p class="w3-wide">Inteligência</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Beleza</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Humor</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Profissional</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Ser parceira</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">Carinho e afeto</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></p>
+      <hr class="w3-opacity">
+
+      <!--Botão te amo-->
+  <h1 style="text-align: center;">Botão Mágico</h1>
+  <div style="text-align: center; background-color: black; border-radius: 20%; text-align-last: center;"  id="area">
+    Clique aqui!
+  </div>
+  <hr class="w3-opacity">
+
+
+   <!--Questionário-->
+   <section id="plano">
+    <div class="container">
+        <div class="row mx-auto">
+          <div class="col-md-4 d-block d-sm-none mx-auto altura">
+        </div>
+            <div class="col-md-4 col-sm-12">
+                <h1 class="title" style="text-align: center;">Date</h1>
+                <div class="row mx-auto">
+                    <h3 class="plano">Plano</h3>
+                    <div class="input-group input-group-sm mb-3 mt-3">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Whatsapp do seu amor:</span>
+                      <input type="number" class="form-control" placeholder="11957465412" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="num">
+                    </div>
+                    <form>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Vamos sair" onclick="opcao('1')">
+                            <label class="form-check-label" for="inlineRadio1">Sair</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Vamos ficar em casa" onclick="opcao('2')">
+                            <label class="form-check-label" for="inlineRadio2">Ficar em casa</label>
+                          </div>
+                          <div id="op1" style="display: none;">
+                          <div class="input-group input-group-sm mb-3 mt-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Onde vamos:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="local">
+                          </div>
+                          <div class="input-group input-group-sm mb-3 mt-3">
+                            <input type="date" id="data"><input type="time" id="hora">
+                          </div>
+                          <div class="input-group input-group-sm mb-3 mt-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Observações:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="obs">
+                          </div>
+                        </div>
+                        <div id="op2" style="display: none;">
+                            <div class="form-check form-check-inline mt-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="filme" value="0" onclick="fs('0')">
+                                <label class="form-check-label" for="inlineRadio1">Filme</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="serie" value="1" onclick="fs('1')">
+                                <label class="form-check-label" for="inlineRadio2">Série</label>
+                              </div>
+                            <div class="input-group input-group-sm mb-3 mt-3">
+                              <span class="input-group-text" id="inputGroup-sizing-sm">Vamos comer:</span>
+                              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="comida">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 mt-3">
+                              <input type="date" id="data2"><input type="time" id="hora2">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 mt-3">
+                              <span class="input-group-text" id="inputGroup-sizing-sm">Observações:</span>
+                              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="obs2">
+                            </div>
+                          </div>
+                          <div class="d-grid gap-2">
+                          <center><button type="button" class="btn btn-dark" id="botao" name="botao" onclick="enviarf()" style="display: none;">Enviar</button></center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-sm-block">
+                
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="w3-opacity">
+
+      <h4 class="w3-padding-16">Quanto custa para mim</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center">
+            <li class="w3-black w3-xlarge w3-padding-32">Encontrinho básico</li>
+            <li class="w3-padding-16">Metrô + busão</li>
+            <li class="w3-padding-16">Salgados de 1 real</li>
+            <li class="w3-padding-16">Algo para beber</li>
+            <li class="w3-padding-16">Carinho e atenção</li>
+            <li class="w3-padding-16">
+              <h2>R$ 15</h2>
+              <span class="w3-opacity">por semana</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <a href="https://www.instagram.com/eustter_/" target="_blank"><button class="w3-button w3-white w3-padding-large">Convidar</button></a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-third">
+          <ul class="w3-ul w3-white w3-center">
+            <li class="w3-black w3-xlarge w3-padding-32">Uma noite fora</li>
+            <li class="w3-padding-16">Um lanche</li>
+            <li class="w3-padding-16">Uma bebida</li>
+            <li class="w3-padding-16">Uber</li>
+            <li class="w3-padding-16">Cineminha</li>
+            <li class="w3-padding-16">
+              <h2>R$ 75</h2>
+              <span class="w3-opacity">por mês</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <a href="https://www.instagram.com/eustter_/" target="_blank"><button class="w3-button w3-white w3-padding-large">Convidar</button></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third">
+            <ul class="w3-ul w3-white w3-center">
+              <li class="w3-black w3-xlarge w3-padding-32">Fim de semana top</li>
+              <li class="w3-padding-16">Delivery de comida</li>
+              <li class="w3-padding-16">Presentinho para ela</li>
+              <li class="w3-padding-16">Dormir de conchinha</li>
+              <li class="w3-padding-16">A conta de luz e água</li>
+              <li class="w3-padding-16">
+                <h2>R$ 500</h2>
+                <span class="w3-opacity">a cada 2 meses</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a href="https://www.instagram.com/eustter_/" target="_blank"><button class="w3-button w3-white w3-padding-large">Convidar</button></a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+  
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Fale comigo</b></h4>
+      <p>Quer matar a saudade? Preencha o formulário e venha falar com seu bebê!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Nome</label>
+          <input class="w3-input w3-border" type="text"  >
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" >
+        </div>
+        <div class="w3-section">
+          <label>Mensagem</label>
+          <input class="w3-input w3-border" type="text" >
+        </div>
+        
+      </form>
+      <a href="https://www.instagram.com/miqueiascs_/" target="_blank" rel="external"><button class="w3-button w3-block w3-black w3-margin-bottom">Enviar</button></a>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Pressentimento bom
+            Teu beijo doce que causa, hey
+            Seu beijo é tão bom, é tão bom
+            É gosto doce que causa alucinação</p>
+            <a href="https://www.youtube.com/watch?v=u_aFZc0odgw&ab_channel=GR6EXPLODE">Clique aqui</a>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>FUTURAS VIAGENS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="https://www.costacruzeiros.com/content/dam/costa/costa-magazine/article-images/what-to-see-in-rio-de-janeiro/rio-de-janeiro-panorama_YuJas-Shutterstock_2.jpg.image.694.390.low.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"></span><br>
+            <br>
+            <span>Rio de Janeiro</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="data:image/jpeg;base64,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" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"></span><br>
+            <br>
+            <span>México</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Ester</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SP</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Brasil</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Carvalho</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">19/06</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">zap zap</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Esportes</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bah</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Insta</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">2 meses</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cílios</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">amiga</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Culinária</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Produzido por <a href="https://www.instagram.com/eustter_/" title="Ester" target="_blank" class="w3-hover-opacity">Ester Carvalho</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Botão
+var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            
+            a.innerText = 'Te amo 💗!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Clique aqui!'
+            a.style.background = 'green'
+        }
+        function sair() {
+            a.innerText= 'Infinitamente!'
+            a.style.background = 'green'
+            }
+    
+</script>
+<script type="text/javascript">
+    function enviarf(){
+      number = document.getElementById("num").value;
+
+      if (document.getElementById("local").value != ""){
+        aux = document.getElementById("inlineRadio1").value;
+      aux = aux + " para " + document.getElementById("local").value;
+      console.log(aux);
+      aux = aux + " dia " + document.getElementById("data").value.split('-').reverse().join('/');
+      aux = aux + " as " + document.getElementById("hora").value;
+        aux = aux + ". " + document.getElementById("obs").value;
+      }else{
+        aux = "Vamos assistir " + aux2;
+      aux = aux + ", vamos comer " + document.getElementById("comida").value;
+      aux = aux + " dia " + document.getElementById("data2").value.split('-').reverse().join('/');
+      aux = aux + " as " + document.getElementById("hora2").value;
+        aux = aux + ". " + document.getElementById("obs2").value;
+      }
+      window.open('https://api.whatsapp.com/send/?phone=55' + number + '&text=' + aux + '&app_absent=0');
+    }
+
+    function fs(op){
+      if (op == "0"){
+        aux2 = "Filme";
+      }else{
+        aux2 = "Serie";
+      }
+    }
+
+function opcao(id){
+    if (id == "0"){
+        document.getElementById('op1').style.display = 'none';
+        document.getElementById('op2').style.display = 'none';
+        document.getElementById('botao').style.display = 'none';
+    }else if (id == "1"){
+        document.getElementById('op1').style.display = 'block';
+        document.getElementById('op2').style.display = 'none';
+        document.getElementById('botao').style.display = 'block';
+
+
+
+    }else {
+        document.getElementById('op1').style.display = 'none';
+        document.getElementById('op2').style.display = 'block';
+        document.getElementById('botao').style.display = 'block';
+
+
+    }
+}
+</script>
+
+</body>
+</html>
